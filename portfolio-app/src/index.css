@@ -1,4 +1,5 @@
 body {
+  background-color: #0c192a;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,94 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  padding: 35px 0px 25px 0px;
+  height: auto;
+  background-color: #0b1526;
+  color: white;
+}
+
+header h3 {
+  font-weight: normal;
+  padding-left: 5%;
+  text-align: left;
+  margin: auto;
+}
+
+.navBar {
+  background-color: #0b1526;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  text-align: left;
+  margin: auto;
+}
+
+.navBar a {
+  padding-right: 10px;
+  margin: auto;
+}
+
+.lineDiv {
+  width: 90%;
+  margin: auto;
+  border: none;
+  height: 1px;
+  background-color: #313438;
+}
+
+.dark-blue {
+  background-color: #0b1526;
+}
+
+a:link, a:visited {
+  color: #7fccbd;
+  text-decoration: none;
+}
+
+footer {
+  padding: 35px 0px 25px 0px;
+  height: auto;
+  background-color: #0b1526;
+  color: white;
+}
+
+.fa {
+  font-size: 16pt;
+  margin: auto;
+  padding: 6px;
+}
+
+.container {
+  padding: 80px;
+  margin: auto;
+}
+
+.inner-container {
+  margin: auto;
+  height: 660px;
+  width: 90%;
+}
+
+.welcome-card {
+  float: left;
+  margin: auto;
+  background-color: #1c1d1d;
+  width: 50%;
+  height: 100%;
+}
+
+.welcome-card div {
+  padding-top: 25%;
+  margin: auto;
+}
+
+.project-card {
+  width: 30%;
+  min-width: 350px;
+  margin: 10px;
+  background-color: #610a0a;
+  height: 600px;
 }
