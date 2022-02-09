@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
     const titleStyle = {
         color: "#7fccbd",
         fontSize: "20pt",
@@ -15,11 +15,18 @@ const ProjectCard = () => {
         padding: "10px"
     }
 
+    const imgStyle = {
+      objectFit: "cover",
+      objectPosition: "0% 100%",
+      aspectRatio: "16 / 9",
+      width: "95%"
+    }
+
   return (
     <div className="project-card">
-        <img></img>
-        <h1 style={titleStyle}>Title</h1>
-        <h2 style={descStyle}>Desc</h2>
+        <img style={imgStyle} src={props.img} alt="Test"></img>
+        <h1 style={titleStyle}>{props.title}</h1>
+        <h2 style={descStyle}>{props.desc}</h2>
     </div>
   )
 }
