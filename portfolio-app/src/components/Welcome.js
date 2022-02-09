@@ -24,7 +24,7 @@ const Welcome = () => {
     }
   return (
     <div className="container">
-        <div className="inner-container">
+        <div className="inner-container" style={{height: "660px"}}>
 
             {/* when phone sized hide img and make welcom card 100% */}
           

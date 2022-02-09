@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Welcome from './components/Welcome';
 import ProjectsComp from './components/ProjectsComp';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <Welcome/>
 
       <ProjectsComp/>
+
+      <Contact/>
 
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

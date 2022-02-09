@@ -53,6 +53,10 @@ header h3 {
   background-color: #0b1526;
 }
 
+.dark-gray {
+  background-color: #1c1d1d;
+}
+
 a:link, a:visited {
   color: #7fccbd;
   text-decoration: none;
@@ -78,7 +82,6 @@ footer {
 
 .inner-container {
   margin: auto;
-  height: 660px;
   width: 90%;
 }
 
@@ -99,6 +102,6 @@ footer {
   width: 30%;
   min-width: 350px;
   margin: 10px;
-  background-color: #610a0a;
-  height: 600px;
+  padding: 10px;
+  height: 400px;
 }
