@@ -31,12 +31,18 @@ const Contact = () => {
 
   return (
     <div className="container">
-         <div className="inner-container dark-gray" style={{padding: "50px"}}>
+         <div className="inner-container dark-gray">
+             <div className="centered">
+             <div style={{padding: "50px"}}>
             <h1 style={titleStyle}>Get in Touch</h1>
+
+            <br/>
 
             <nav>
                 {items}
             </nav>
+            
+            <br/>
 
             <h2 style={descStyle}>Toronto, Ontario</h2>
             <a style={descStyle} href="mailto:javier.violante123@gmail.com">javier.violante123@gmail.com</a>
@@ -45,7 +51,8 @@ const Contact = () => {
 
             <a style={descStyle} href="tel:4168025034">416-802-5034</a>
 
-
+            </div>
+            </div>
          </div>
     </div>
   )

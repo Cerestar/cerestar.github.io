@@ -23,19 +23,12 @@ const ProjectsComp = () => {
         margin: "0px"
     }
 
-    const compStyle = {
-        margin: "auto",
-        display: "flex",
-        justifyContent: "center",
-        flexWrap: "wrap"
-    }
-
     
   return (
     <div className="container dark-blue">
         <h1 style={titleStyle}>Projects</h1>
 
-        <div style={compStyle}>
+        <div className="centered">
             {items}
         </div>
         
