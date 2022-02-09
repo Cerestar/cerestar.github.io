@@ -14,7 +14,7 @@ const ProjectsComp = () => {
         items.push(<ProjectCard img={i.img} title={i.title} desc={i.desc}/>)
     })
 
-    const TitleStyle = {
+    const titleStyle = {
         color: "#7fccbd",
         paddingTop: "20px",
         paddingBottom: "10px",
@@ -33,7 +33,7 @@ const ProjectsComp = () => {
     
   return (
     <div className="container dark-blue">
-        <h1 style={TitleStyle}>Projects</h1>
+        <h1 style={titleStyle}>Projects</h1>
 
         <div style={compStyle}>
             {items}
