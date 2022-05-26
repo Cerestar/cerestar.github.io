@@ -24,9 +24,11 @@ const ProjectCard = (props) => {
 
   return (
     <div className="project-card">
+      <a href={props.link}>
         <img style={imgStyle} src={props.img} alt="Test"></img>
         <h1 style={titleStyle}>{props.title}</h1>
         <h2 style={descStyle}>{props.desc}</h2>
+      </a>
     </div>
   )
 }

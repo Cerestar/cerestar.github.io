@@ -3,15 +3,15 @@ import ProjectCard from './ProjectCard'
 
 const ProjectsComp = () => {
     let images = [
-        {img: "images/kalios-img.png", title: "Kalios", desc: "Procedurally generated platforming game."},
-        {img: "images/server-img.png", title: "Server", desc: "Networking solution for multiplayer game concept."},
-        {img: "images/bot-img.png", title: "Bot", desc: "Discord chat bot made using Node.js."}
+        {img: "images/kalios-img.png", title: "Kalios", desc: "Procedurally generated platforming game.", link: "javascript:void(0);"},
+        {img: "images/server-img.png", title: "Server", desc: "Networking solution for multiplayer game concept.", link: "https://github.com/Cerestar/GameServer"},
+        {img: "images/bot-img.png", title: "Bot", desc: "Discord chat bot made using Node.js.", link: "https://github.com/Cerestar/SakuraBot"}
     ]
 
     let items = []
 
     images.forEach( i => {
-        items.push(<ProjectCard img={i.img} title={i.title} desc={i.desc}/>)
+        items.push(<ProjectCard img={i.img} title={i.title} desc={i.desc} link={i.link}/>)
     })
 
     const titleStyle = {
