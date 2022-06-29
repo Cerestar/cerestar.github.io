@@ -12,7 +12,9 @@ const ProjectCard = (props) => {
         color: "white",
         fontSize: "14pt",
         fontWeight: "normal",
-        padding: "10px"
+        padding: "10px",
+        whiteSpace: "pre-wrap"
+
     }
 
     const imgStyle = {

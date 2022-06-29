@@ -6,25 +6,25 @@ const ProjectsComp = () => {
         {
             img: "images/kalios-img.png", 
             title: "Kalios", 
-            desc: "Procedurally generated platforming game.<br/>Created with Unity<br/><br/>Click for more Information...", 
+            desc: "Procedurally generated platforming game.&#10;Created with Unity&#10;&#10;Click for more Information...", 
             link: "https://4nz.itch.io/kalios/devlog/309699/kalios-demo"
         },
         {
             img: "images/server-img.png", 
             title: "Server", 
-            desc: "Networking solution for multiplayer game concept.<br/>Created with C# Core and Unity<br/><br/>Click for more Information...", 
+            desc: "Networking solution for multiplayer game concept.&#10;Created with C# Core and Unity&#10;&#10;Click for more Information...", 
             link: "https://github.com/Cerestar/GameServer"
         },
         {
             img: "images/bot-img.png", 
             title: "Bot", 
-            desc: "Discord chat bot made using Node.js.<br/>Created with Javascript & Node.js<br/><br/>Click for more Information...", 
+            desc: "Discord chat bot made using Node.js.&#10;Created with Javascript & Node.js&#10;&#10;Click for more Information...", 
             link: "https://github.com/Cerestar/SakuraBot"
         },
         {
             img: "images/asteroids-img.png", 
             title: "Asteroids C++", 
-            desc: "Asteroids created using a from scratch game engine.<br/>C++ Core<br/><br/>Click for direct download...", 
+            desc: "Asteroids created using a from scratch game engine.&#10;C++ Core&#10;&#10;Click for direct download...", 
             link: "dataFiles/Asteroids C++.zip"
         }
         
