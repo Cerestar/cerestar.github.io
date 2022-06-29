@@ -39,7 +39,7 @@ const Welcome = () => {
             {/* when phone sized hide img and make welcom card 100% */}
           <div className="centered">
             <div className="welcome-card">
-                <div>
+                <div style="top-padding:10px;">
                         <h1 style={titleStyle}>
                             Javier <br/> Violante
                         </h1>

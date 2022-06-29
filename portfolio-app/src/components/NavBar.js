@@ -3,9 +3,6 @@ const NavBar = () => {
         {text: "Home", url: "https://cerestar.github.io/"},
         {text: "Projects", url: "#projectsDiv"},
         {text: "Contact Info", url: "#contactDiv"},
-        {text: "Linkedin", url: "https://www.linkedin.com/in/javierviolante/"},
-        {text: "Github", url: "https://github.com/Cerestar"},
-
     ]
 
     let navItems = [];
@@ -18,6 +15,8 @@ const NavBar = () => {
   return (
     <nav className="navBar">
         {navItems}
+        <a href="https://www.linkedin.com/in/javierviolante/"> Linkedin </a>
+        <a href="https://github.com/Cerestar"> Github </a>
     </nav>
   )
 }
