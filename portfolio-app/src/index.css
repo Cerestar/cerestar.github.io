@@ -102,9 +102,9 @@ footer {
 .project-card {
   width: 30%;
   min-width: 400px;
-  margin: 16px;
-  margin-top: 22px;
+  margin: 12px;
   padding: 10px;
+  padding-top: 20px;
 }
 
 .project-card:hover {
