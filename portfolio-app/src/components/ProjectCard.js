@@ -27,7 +27,7 @@ const ProjectCard = (props) => {
       <a href={props.link}>
         <img style={imgStyle} src={props.img} alt="Test"></img>
         <h1 style={titleStyle}>{props.title}</h1>
-        <h2 style={descStyle}>{props.desc}<br/>Click for more Information...</h2>
+        <h2 style={descStyle}>{props.desc}<br/><br/>Click for more Information...</h2>
       </a>
     </div>
   )
