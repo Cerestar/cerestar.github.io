@@ -107,6 +107,12 @@ footer {
   height: 400px;
 }
 
+.project-card:hover {
+  background-color: #0c192a;
+}
+
+
+
 .centered {
     margin: auto;
     display: flex;
