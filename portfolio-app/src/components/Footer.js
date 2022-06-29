@@ -21,8 +21,7 @@ const Footer = () => {
             {items}
         </nav>
 
-        <div>©2022 by Javier Violante.</div>
-        <div>Created using React JS</div>
+        <div>©2022 by Javier Violante. <br/> Created using React JS</div>
     </footer>
   )
 }
