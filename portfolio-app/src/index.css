@@ -102,7 +102,7 @@ footer {
 .project-card {
   width: 30%;
   min-width: 400px;
-  margin: 20px;
+  margin: 16px 12px 12px 40px;
   padding: 10px;
   height: 400px;
 }
