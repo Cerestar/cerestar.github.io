@@ -22,6 +22,7 @@ const Footer = () => {
         </nav>
 
         ©2022 by Javier Violante.
+        Created using React JS
     </footer>
   )
 }
