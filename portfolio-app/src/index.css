@@ -102,13 +102,12 @@ footer {
 .project-card {
   width: 30%;
   min-width: 400px;
-  margin: 16px 12px 12px 40px;
+  margin: 16px;
   padding: 10px;
-
 }
 
 .project-card:hover {
-  background-color: #0c192a30;
+  background-color: #4695df30;
 }
 
 
