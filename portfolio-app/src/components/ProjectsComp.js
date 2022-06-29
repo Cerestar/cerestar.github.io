@@ -47,7 +47,7 @@ const ProjectsComp = () => {
 
     
   return (
-    <div className="container dark-blue">
+    <div className="container dark-blue" id="projectsDiv">
         <h1 style={titleStyle}>Projects</h1>
 
         <div className="centered">

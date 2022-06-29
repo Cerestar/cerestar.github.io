@@ -30,7 +30,7 @@ const Contact = () => {
     }
 
   return (
-    <div className="container">
+    <div className="container" id="contactDiv">
          <div className="inner-container dark-gray">
              <div className="centered">
              <div style={{padding: "50px"}}>

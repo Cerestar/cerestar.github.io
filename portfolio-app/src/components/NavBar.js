@@ -1,6 +1,8 @@
 const NavBar = () => {
     let pages = [
         {text: "Home", url: "https://cerestar.github.io/"},
+        {text: "Projects", url: "#projectsDiv"},
+        {text: "Contact Info", url: "#contactDiv"},
     ]
 
     let navItems = [];
