@@ -45,7 +45,7 @@ const Welcome = () => {
                         </h1>
 
                         <h2 style={subtitleStyle}>
-                            Software Engineer, Game Programmer
+                            Software Engineer, Game Developer
                         </h2>
                 </div>
             </div>

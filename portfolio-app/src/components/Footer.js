@@ -21,8 +21,8 @@ const Footer = () => {
             {items}
         </nav>
 
-        ©2022 by Javier Violante.
-        Created using React JS
+        <div>©2022 by Javier Violante.</div>
+        <div>Created using React JS</div>
     </footer>
   )
 }
