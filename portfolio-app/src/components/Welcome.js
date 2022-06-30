@@ -32,10 +32,6 @@ const Welcome = () => {
         width: "100%",
     }
 
-    const divStyle = {
-        topPadding: "10px"
-    }
-
 
   return (
     <div className="container">
@@ -43,7 +39,7 @@ const Welcome = () => {
             {/* when phone sized hide img and make welcom card 100% */}
           <div className="centered">
             <div className="welcome-card">
-                <div style={divStyle}>
+                <div>
                         <h1 style={titleStyle}>
                             Javier <br/> Violante
                         </h1>
