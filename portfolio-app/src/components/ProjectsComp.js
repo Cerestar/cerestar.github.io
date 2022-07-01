@@ -26,6 +26,12 @@ const ProjectsComp = () => {
             title: "Asteroids C++", 
             desc: "Asteroids game recreated using a from scratch game engine.\nCreated with C++ Core.\n\nClick for direct download.", 
             link: "dataFiles/Asteroids C++.zip"
+        },
+        {
+            img: "images/ac-img.png", 
+            title: "Audio Converter", 
+            desc: "Audio format converter which can convert audio files to other audio formats.\nCreated with C# Core.\n\nClick for download & more information.", 
+            link: "https://github.com/Cerestar/AudioConverter"
         }
         
     ]
