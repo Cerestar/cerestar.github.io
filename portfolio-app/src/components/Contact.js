@@ -49,7 +49,7 @@ const Contact = () => {
             <br/>
             <br/>
 
-            <a style={descStyle} href="tel:4168025034">416-802-5034</a>
+            {/* <a style={descStyle} href="tel:4168025034">416-802-5034</a> */}
 
             </div>
             </div>
