@@ -28,6 +28,12 @@ const ProjectsComp = () => {
             link: "dataFiles/Asteroids C++.zip"
         },
         {
+            img: "images/sear-img.png", 
+            title: "SEAR", 
+            desc: "A small top-down puzzle game made for the Chill Jam game jam.", 
+            link: "https://wavebunny.itch.io/sear-chilljam"
+        },
+        {
             img: "images/ac-img.png", 
             title: "Audio Converter", 
             desc: "Audio format converter which can convert audio files to other audio formats.\nCreated with C# Core.\n\nClick for download & more information.", 
