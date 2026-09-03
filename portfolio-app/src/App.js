@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Header from './components/Header'
@@ -9,6 +8,12 @@ import ProjectsComp from './components/ProjectsComp';
 import Contact from './components/Contact';
 
 function App() {
+  const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+
+  if (currentPath !== '/portfolio') {
+    return null;
+  }
+
   return (
     <div className="App">
       <Header/>
@@ -16,12 +21,8 @@ function App() {
       <NavBar/>
 
       <Welcome/>
-
       <ProjectsComp/>
-
       <Contact/>
-
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
       <Footer/>
     </div>

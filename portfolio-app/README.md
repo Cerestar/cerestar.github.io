@@ -1,3 +1,48 @@
+# Portfolio App
+
+## Local development and deployment
+
+Run these scripts from the repository root (`cerestar.github.io`):
+
+```powershell
+.\run-portfolio.ps1
+.\run-showcase.ps1
+.\deploy.ps1
+```
+
+The portfolio runs at `http://localhost:3000/`. The independent showcase runs at `http://localhost:3001/`.
+
+If PowerShell blocks scripts, allow locally created scripts for your user:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+### GitHub Pages deployment
+
+Run these commands from the `portfolio-app` directory:
+
+```powershell
+npm install
+npm run deploy
+```
+
+The deploy script builds the app, verifies that the static pages are included, and publishes the `build` directory to the `master` branch using `gh-pages`.
+
+The showcase is an independent React app in `../showcase-app`. To develop it by itself:
+
+```powershell
+cd ..\showcase-app
+npm install
+npm start
+```
+
+Pages after deployment:
+
+- `/` is the blank root page.
+- `/portfolio.html` is the portfolio page.
+- `/showcase/` is the standalone showcase app.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

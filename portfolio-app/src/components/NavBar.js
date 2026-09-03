@@ -1,7 +1,9 @@
 const NavBar = () => {
     let pages = [
-        {text: "Home", url: "https://cerestar.github.io/"},
+        {text: "Home", url: "/"},
+        {text: "Portfolio", url: "/portfolio.html"},
         {text: "Projects", url: "#projectsDiv"},
+        {text: "Showcase", url: "/showcase.html"},
         {text: "Contact Info", url: "#contactDiv"},
     ]
 
