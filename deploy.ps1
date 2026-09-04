@@ -18,6 +18,6 @@ if (-not (Test-Path (Join-Path $portfolioDirectory 'package.json'))) {
     throw "Portfolio app was not found at $portfolioDirectory"
 }
 
-Write-Host 'Building and deploying portfolio and showcase apps...' -ForegroundColor Cyan
+Write-Host 'Building and deploying portfolio...' -ForegroundColor Cyan
 & $npmPath --prefix $portfolioDirectory run deploy
 exit $LASTEXITCODE

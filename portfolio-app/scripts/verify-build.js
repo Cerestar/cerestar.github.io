@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const buildDirectory = path.join(__dirname, '..', 'build');
-const requiredFiles = ['index.html', 'portfolio.html', 'showcase.html', 'showcase/index.html'];
+const requiredFiles = ['index.html', 'portfolio.html'];
 const missingFiles = requiredFiles.filter(
   (file) => !fs.existsSync(path.join(buildDirectory, file))
 );
@@ -12,4 +12,4 @@ if (missingFiles.length > 0) {
   process.exit(1);
 }
 
-console.log('Build contains all GitHub Pages entry points.');
+console.log('Build contains the portfolio entry points.');

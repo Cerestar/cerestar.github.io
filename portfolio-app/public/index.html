@@ -2,24 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico?" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Javier Violante Portfolio Website"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="description" content="Javier Violante portfolio" />
+    <title>Portfolio | Javier Violante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      :root {
+        --ink: #ffffff;
+        --muted: #b9c5d3;
+        --page: #102037;
+        --panel: #0b1526;
+        --card: #0d0d0d;
+        --line: #313438;
+        --accent: #7fccbd;
+      }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Javier Violante</title>
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; color: var(--ink); background: var(--page); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover, a:focus { text-decoration: underline; }
+      header, footer, .nav-wrap { background: var(--panel); }
+      header { padding: 35px 5% 25px; }
+      header h1 { margin: 0; font-size: 1.1rem; font-weight: 400; }
+      .line { width: 90%; height: 1px; margin: 0 auto; border: 0; background: var(--line); }
+      nav { padding: 10px 5% 30px; }
+      nav a { margin-right: 14px; }
+      .container { padding: 80px 5%; }
+      .centered { display: flex; justify-content: center; flex-wrap: wrap; margin: auto; }
+      .welcome-card, .welcome-image { width: 50%; min-width: 320px; height: 600px; }
+      .welcome-card { display: flex; align-items: center; justify-content: center; background: var(--card); text-align: center; }
+      .welcome-card h2 { color: var(--accent); font-size: clamp(2.5rem, 6vw, 4.2rem); font-weight: 400; line-height: 1.1; }
+      .welcome-card p { padding: 10px; font-size: 1.1rem; }
+      .welcome-image { background: white; }
+      .welcome-image img { width: 100%; height: 100%; object-fit: cover; }
+      .section-title { margin: 0 0 30px; color: var(--accent); font-size: 2.2rem; font-weight: 400; text-align: center; }
+      .projects { background: var(--panel); }
+      .project-card { width: 30%; min-width: 280px; margin: 8px; padding: 10px; }
+      .project-card:hover { background: #4695df17; }
+      .project-card img { display: block; width: 95%; aspect-ratio: 16 / 9; object-fit: cover; object-position: 0% 100%; }
+      .project-card h2 { margin: 0; color: var(--accent); font-size: 1.35rem; font-weight: 400; }
+      .project-card p { color: var(--ink); font-size: 1rem; white-space: pre-line; }
+      .contact-inner { max-width: 900px; margin: auto; padding: 50px; background: var(--card); text-align: center; }
+      .contact-inner h2 { color: var(--accent); font-size: 2.2rem; font-weight: 400; }
+      .contact-inner p { color: var(--ink); }
+      .fa { margin: 6px; padding: 6px; font-size: 16pt; }
+      footer { padding: 35px 5% 25px; color: var(--muted); text-align: center; }
+      footer nav { padding: 0 0 18px; }
+      @media (max-width: 700px) {
+        .container { padding: 52px 5%; }
+        .welcome-card, .welcome-image { width: 100%; height: 400px; }
+        .welcome-image { display: none; }
+        .project-card { width: 100%; max-width: 430px; }
+        .contact-inner { padding: 30px 16px; }
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header><h1>Javier Violante</h1></header>
+    <div class="nav-wrap">
+      <hr class="line" />
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/portfolio.html" aria-current="page">Portfolio</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Info</a>
+        <a href="https://www.linkedin.com/in/javierviolante/">LinkedIn</a>
+        <a href="https://github.com/Cerestar">GitHub</a>
+      </nav>
+    </div>
 
-    <div id="root"></div>
-    
+    <main>
+      <section class="container">
+        <div class="centered">
+          <div class="welcome-card">
+            <div><h2>Javier<br />Violante</h2><p>Software Engineer, Game Developer</p></div>
+          </div>
+          <div class="welcome-image"><img src="images/welcome.png" alt="Welcome" /></div>
+        </div>
+      </section>
+
+      <section class="container projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="centered">
+          <article class="project-card"><a href="https://4nz.itch.io/kalios/devlog/309699/kalios-demo"><img src="images/kalios-img.png" alt="Kalios project" /><h2>Kalios</h2><p>Procedurally generated platforming game.
+Created with Unity.
+
+Click for more information.</p></a></article>
+          <article class="project-card"><a href="https://github.com/Cerestar/GameServer"><img src="images/server-img.png" alt="Realtime Server project" /><h2>Realtime Server</h2><p>Realtime networking solution for multiplayer game concept. Can be paired to a custom client
+Created with C# Core and Unity.
+
+Click for more information.</p></a></article>
+          <article class="project-card"><a href="https://github.com/Cerestar/SakuraBot"><img src="images/bot-img.png" alt="Discord Bot project" /><h2>Discord Bot</h2><p>Discord chat bot which processes commands, sends messages, and connects to a database.
+Created with Javascript &amp; Node.js.
+
+Click for more information.</p></a></article>
+          <article class="project-card"><a href="dataFiles/Asteroids%20C%2B%2B.zip"><img src="images/asteroids-img.png" alt="Asteroids C++ project" /><h2>Asteroids C++</h2><p>Asteroids game recreated using a from-scratch game engine.
+Created with C++ Core.
+
+Click for direct download.</p></a></article>
+          <article class="project-card"><a href="https://wavebunny.itch.io/sear-chilljam"><img src="images/sear-img.jpg" alt="SEAR project" /><h2>SEAR</h2><p>A small top-down puzzle game made for the Chill Jam game jam.</p></a></article>
+          <article class="project-card"><a href="https://github.com/Cerestar/AudioConverter"><img src="images/ac-img.png" alt="Audio Converter project" /><h2>Audio Converter</h2><p>Audio format converter which can convert audio files to other audio formats.
+Created with C# Core.
+
+Click for download and more information.</p></a></article>
+        </div>
+      </section>
+
+      <section class="container" id="contact">
+        <div class="contact-inner">
+          <h2>Get in Touch</h2>
+          <nav aria-label="Contact links"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/javierviolante/" aria-label="LinkedIn"></a><a class="fa fa-github" href="https://github.com/Cerestar" aria-label="GitHub"></a></nav>
+          <p>Toronto, Ontario</p>
+          <a href="mailto:javier.violante123@gmail.com">javier.violante123@gmail.com</a>
+        </div>
+      </section>
+    </main>
+    <footer><nav aria-label="Footer links"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/javierviolante/" aria-label="LinkedIn"></a><a class="fa fa-github" href="https://github.com/Cerestar" aria-label="GitHub"></a><a class="fa fa-at" href="mailto:javier.violante123@gmail.com" aria-label="Email"></a></nav>©2022 by Javier Violante.<br />Created using React JS</footer>
   </body>
 </html>
