@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="showcase-app">
       <header>
-        <h1>BUNNYMOB STUDIO</h1>
+        <h1>BUNNYMOB ARTWORKS</h1>
         <p className="tagline">I make art focusing on anime, manga, and gaming.</p>
       </header>
       <main>
@@ -58,7 +58,7 @@ function App() {
           <a href="https://x.com/BunnyMob_">X / Twitter</a>
           <a href="mailto:bunnymobstudio@gmail.com">Email</a>
         </nav>
-        <p>© 2026 Bunny Mob Studio. All rights reserved.</p>
+        <p>© 2026 Bunny Mob Artworks. All rights reserved.</p>
       </footer>
     </div>
   );
