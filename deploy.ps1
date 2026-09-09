@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 
-$portfolioDirectory = Join-Path $PSScriptRoot 'portfolio-app'
+$showcaseDirectory = Join-Path $PSScriptRoot 'showcase-app'
 $npmCommand = Get-Command npm.cmd -ErrorAction SilentlyContinue
 
 if ($null -eq $npmCommand) {
@@ -14,10 +14,10 @@ if ($null -eq $npmCommand) {
     $npmPath = $npmCommand.Source
 }
 
-if (-not (Test-Path (Join-Path $portfolioDirectory 'package.json'))) {
-    throw "Portfolio app was not found at $portfolioDirectory"
+if (-not (Test-Path (Join-Path $showcaseDirectory 'package.json'))) {
+    throw "Showcase app was not found at $showcaseDirectory"
 }
 
-Write-Host 'Building and deploying portfolio...' -ForegroundColor Cyan
-& $npmPath --prefix $portfolioDirectory run deploy
+Write-Host 'Building and deploying showcase...' -ForegroundColor Cyan
+& $npmPath --prefix $showcaseDirectory run deploy
 exit $LASTEXITCODE
